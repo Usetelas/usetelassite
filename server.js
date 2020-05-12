@@ -14,7 +14,7 @@ mongoose.connect(process.env.USETELAS_DATABASE_URI, {
   console.log('successfully connected to the database');
 })
 
-app.listen(process.env.USETELAS_PORT, (err) => {
+app.listen(process.env.PORT || 3000, (err) => {
   if(err) throw err;
   console.log('server successfuly connected');
 })
